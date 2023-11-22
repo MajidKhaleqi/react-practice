@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+.shopping-cart-product img {
+  width:90px;
+  height:90px;
+  border-radius: 50%;
+}
+.shopping-cart-product{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.delete{
+  cursor:pointer;
+  color: red;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+
+}
+.shopping-cart{
+  overflow: scroll;
+  background: #c4a4a4;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 37px;
+
+}
+.cards-container{
+  margin-top: 100px;
+}
+.badge{
+  background-color: red;
+  display: -webkit-inline-box;
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px;
+  -webkit-box-pack: center;
+  color: white;
+}
+nav{
+ background-color: #c4a4a4;
+ overflow: hidden;
+ z-index: 100;
+ position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+ width: 100%; /* Full width */
+}
+.App{
+  text-align: unset !important;
+}
+.productListClass{
+  display: flex;
+  flex-wrap: wrap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #c9bbbb;
+}
+
+.card {
+  margin:20px;
+  position: relative;
+  width: 290px;
+  height: 470px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "CORSAIR";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 15px;
+  color: white;
+ 
+}
+
+.card .contentBox .price {
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+.buy{
+  cursor:pointer
+}
+
+  
+  /* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  .todoClass{
+    display: inline-grid;
+
+    background-color: #54666c;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+
+  
+  }
+  .todoContainerClass{
+    display: flex;
+    place-content: center;
+    margin-top: 20px;
+  }
+
+  .delete{
+    color: red;
+    font-weight: bold;
+    text-align: end;
+  } */
+
+ 
