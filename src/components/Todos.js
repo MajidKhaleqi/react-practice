@@ -20,21 +20,32 @@ export default function Todos() {
 
   return (
     <>
-      <AddTodo
-        onAdd={(t) => {
-          return Add(t);
-        }}
-      />
-      {todos.map((todo) => {
-        return (
-          <Todo
-            text={todo}
-            onDelete={(t) => {
-              return Delete(t);
+      <div class="grid grid-cols-2 gap-4">
+        <div className="">
+          <AddTodo
+            onAdd={(t) => {
+              return Add(t);
             }}
           />
-        );
-      })}
+        </div>
+        <div className="m-5 font-bold text-center">
+          Todoos :
+          {todos.length > 0 ? (
+            todos.map((todo) => {
+              return (
+                <Todo
+                  text={todo}
+                  onDelete={(t) => {
+                    return Delete(t);
+                  }}
+                />
+              );
+            })
+          ) : (
+            <p className="m-5 font-bold ">Nothing to show!</p>
+          )}
+        </div>
+      </div>
     </>
   );
 }
